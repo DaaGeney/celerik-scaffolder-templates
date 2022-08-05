@@ -1,3 +1,46 @@
 {
-  "variables": [ "{{component-name}}"]
+  "variables": ["{{var1}}", "!!component-name}}", "{{name}}"],
+  "expressions": {
+    "{{var1CamelCase}}": {
+      "case": "camel",
+      "variable": "{{var1}}"
+    },
+    "{{var1KebabCase}}": {
+      "case": "kebab",
+      "variable": "{{var1}}"
+    },
+    "{{var1LowerCase}}": {
+      "case": "lower",
+      "variable": "{{var1}}"
+    },
+    "{{var1LowerWithSpaceCase}}": {
+      "case": "lowerWithSpace",
+      "variable": "{{var1}}"
+    },
+    "{{var1PascalCase}}": {
+      "case": "pascal",
+      "variable": "{{var1}}"
+    },
+    "{{var1SnakeCase}}": {
+      "case": "snake",
+      "variable": "{{var1}}"
+    },
+    "{{var1UpperCase}}": {
+      "case": "upper",
+      "variable": "{{var1}}"
+    },
+    "{{var1UpperKebabCase}}": {
+      "case": "upperKebab",
+      "variable": "{{var1}}"
+    },
+    "{{var1UpperSnakeCase}}": {
+      "case": "upperSnake",
+      "variable": "{{var1}}"
+    },
+    "{{var1UpperWithSpaceCase}}": {
+      "case": "upperWithSpace",
+      "variable": "{{var1}}"
+    }
+  },
+  "isRelative": true
 }

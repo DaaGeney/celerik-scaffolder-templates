@@ -10,7 +10,17 @@ function {{component-name}}({ box } : {{component-name}}Props) {
   const boxProps = { ...{{component-name}}.defaultProps.box, ...box } as BoxProps;
   return (
     <Box {...boxProps}>
-      {t('hello-world')}
+      {t('{{var1}}')}
+      <p>Camel: {{var1CamelCase}}</p>
+      <p>kebab: {{var1KebabCase}}</p>
+      <p>lower: {{var1LowerCase}}</p>
+      <p>lowerWithSpace: {{var1LowerWithSpaceCase}}</p>
+      <p>Pascal: {{var1PascalCase}}</p>
+      <p>snake: {{var1SnakeCase}}</p>
+      <p>upper: {{var1UpperCase}}</p>
+      <p>upperKebab: {{var1UpperKebabCase}}</p>
+      <p>upperSnake: {{var1UpperSnakeCase}}</p>
+      <p>upperWithSpace: {{var1UpperWithSpaceCase}}</p>
     </Box>
   );
 }
