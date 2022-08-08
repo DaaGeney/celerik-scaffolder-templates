@@ -1,5 +1,12 @@
 {
-  "variables": ["{{var1}}", "!!component-name}}", "{{name}}"],
+  "variables": [
+    "{{var1}}",
+    {
+      "name": "{{component-name}}",
+      "help": "This variable is used to set the component name"
+    },
+    "{{name}}"
+  ],
   "expressions": {
     "{{var1CamelCase}}": {
       "case": "camel",
